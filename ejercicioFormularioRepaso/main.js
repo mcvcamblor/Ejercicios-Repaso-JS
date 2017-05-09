@@ -1,5 +1,5 @@
 //elegir fecha nacimiento: día
-var daysList = document.getElementById('.js-birthday day');
+var daysList = document.getElementById('day-js');
 
 for (var i = 1; i <= 31; i++) {
     var option = document.createElement("option");
@@ -9,7 +9,7 @@ for (var i = 1; i <= 31; i++) {
 }
 
 //mes
-var monthsList = document.getElementById('.js-birthday month');
+var monthsList = document.getElementById('month-js');
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 for (var i = 0; i < months.length; i++) {
@@ -20,7 +20,7 @@ for (var i = 0; i < months.length; i++) {
 }
 
  //año
-var yearsList = document.getElementById('.js-birthday year');
+var yearsList = document.getElementById('year-js');
 
 for (var i = 1900; i <= 2017; i++) {
     var option = document.createElement("option");
@@ -29,10 +29,10 @@ for (var i = 1900; i <= 2017; i++) {
     yearsList.appendChild(option);
 }
 
- //validar mail
-var email= document.getElementById(".mail").value;
-var reEmail= document.getElementById('.remail').value;
-var name= document.getElementById('.firstName').value;
+ //validar mail. hay que poner id no class
+var email= document.getElementById("mail").value;
+var reEmail= document.getElementById('remail').value;
+var name= document.getElementById('firstName').value;
 
 
 function validateEmail(){
